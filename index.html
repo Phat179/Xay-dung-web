@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/0b9558d756.js" ></script>
 </head>
-<body>
+<body class="">
     <section id="header">
-        <a href="index.html"><img src="assets/image/logo.png" width="90px" height="60px" class="logo" alt=""></a>
+        <a href="index.html"><img src="assets/image/logo.png" width="150px" height="60px" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
@@ -19,15 +19,39 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="lg-bag" class="icon-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>0</span>
+                </li>
+
                 <a href="" id="close"><i class="fa-solid fa-x"></i></a>
+
+                <img class="user-pic" src="assets/image/people/1.jpg" alt="">
             </ul>
         </div>
+        
+
         <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <ul>
+                <li class="icon-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>0</span>
+                </li>
+            </ul>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
+
+        <div class="sub-menu-wrap">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img class="user-pic" src="assets/image/people/1.jpg" alt="">
+                    <h3>Nguyễn Thế Phát</h3>
+                </div>
+            </div>
+        </div>
     </section>
+
+    
     
     <section style="background-image: url('assets/image/hero-1.png')" id="hero">
         <h4>Trade-in-offer</h4>
@@ -64,7 +88,7 @@
         </div>
     </section>
 
-    <section class="section-p1" id="product1">
+    <!-- <section class="section-p1" id="product1">
         <h2>Featured Products</h2>
         <p>Summer Collection Designs</p>
         <div class="pro-container">
@@ -80,15 +104,15 @@
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
                     </div>
-                    <h4>$70</h4>
+                    <h4>$139</h4>
                 </div>
                 <a href=""><i id="cart" class="material-icons">shop</i></a>
-            </div>
-            <div class="pro" onclick="window.location.href='sproduct.html'">
+            </div> -->
+            <!-- <div class="pro" onclick="window.location.href='sproduct.html'">
                 <img src="assets/image/f2.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Cartoon Nature T-Shirt</h5>
+                    <h5>Flower T-Shirt</h5>
                     <div class="star">
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
@@ -96,7 +120,7 @@
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
                     </div>
-                    <h4>$70</h4>
+                    <h4>$120</h4>
                 </div>
                 <a href=""><i id="cart" class="material-icons">shop</i></a>
             </div>
@@ -104,7 +128,7 @@
                 <img src="assets/image/f3.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Cartoon Nature T-Shirt</h5>
+                    <h5>Flower T-Shirt 2</h5>
                     <div class="star">
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
@@ -112,7 +136,7 @@
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
                     </div>
-                    <h4>$70</h4>
+                    <h4>$120</h4>
                 </div>
                 <a href=""><i id="cart" class="material-icons">shop</i></a>
             </div>
@@ -120,7 +144,7 @@
                 <img src="assets/image/f4.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Cartoon Nature T-Shirt</h5>
+                    <h5>Sakura T-Shirt</h5>
                     <div class="star">
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
@@ -128,7 +152,7 @@
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
                     </div>
-                    <h4>$70</h4>
+                    <h4>$149</h4>
                 </div>
                 <a href=""><i id="cart" class="material-icons">shop</i></a>
             </div>
@@ -136,7 +160,7 @@
                 <img src="assets/image/f5.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Cartoon Nature T-Shirt</h5>
+                    <h5>Lotus T-Shirt</h5>
                     <div class="star">
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
@@ -144,7 +168,7 @@
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
                     </div>
-                    <h4>$70</h4>
+                    <h4>$139</h4>
                 </div>
                 <a href=""><i id="cart" class="material-icons">shop</i></a>
             </div>
@@ -152,7 +176,7 @@
                 <img src="assets/image/f6.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Cartoon Nature T-Shirt</h5>
+                    <h5>Brown&Blue Flannel</h5>
                     <div class="star">
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
@@ -160,7 +184,7 @@
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
                     </div>
-                    <h4>$70</h4>
+                    <h4>$199</h4>
                 </div>
                 <a href=""><i id="cart" class="material-icons">shop</i></a>
             </div>
@@ -168,7 +192,7 @@
                 <img src="assets/image/f7.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Cartoon Nature T-Shirt</h5>
+                    <h5>Wideleg Flower Pants</h5>
                     <div class="star">
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
@@ -176,7 +200,7 @@
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
                     </div>
-                    <h4>$70</h4>
+                    <h4>$359</h4>
                 </div>
                 <a href=""><i id="cart" class="material-icons">shop</i></a>
             </div>
@@ -184,7 +208,7 @@
                 <img src="assets/image/f8.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Cartoon Nature T-Shirt</h5>
+                    <h5>Cat Blouse</h5>
                     <div class="star">
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
@@ -192,14 +216,14 @@
                         <i class="material-icons">star</i>
                         <i class="material-icons">star</i>
                     </div>
-                    <h4>$70</h4>
+                    <h4>$113</h4>
                 </div>
                 <a href=""><i id="cart" class="material-icons">shop</i></a>
-            </div>
+            </div> -->
         </div>
     </section>
 
-    <section class="section-m1" id="banner" style="background-image: url('assets/image/b1.jpg')">
+    <section class="section-m1" id="banner" style="background-image: url('assets/image/banner.png')">
         <h4>Guarantee Services</h4>
         <h2>Up to <span>70% off</span> - All t-shirts & accessories</h2>
         <button class="normal">Explore more</button>
@@ -223,7 +247,7 @@
                     </div>
                     <h4>$70</h4>
                 </div>
-                <a href=""><i id="cart" class="material-icons">shop</i></a>
+                <i id="cart" class="material-icons addCart">shop</i>
             </div>
             <div class="pro" onclick="window.location.href='sproduct.html'">
                 <img src="assets/image/n2.jpg" alt="">
@@ -444,12 +468,24 @@
 </div>
 
 
+    <div class="cartTab">
+        <h1>Your Cart</h1>
+        <div class="listCart">
+            
+        </div>
+        <div class="btn">
+            <button class="close">Close</button>
+            <button class="checkout" onclick="window.location.href='cart.html'">Check Out</button>
+        </div>
+    </div>
+    
+
 
 
     <!-- footer -->
     <footer class="section-p1">
         <div class="col">
-            <img class="logo" src="assets/image/logo.png" width="90px" height="60px" alt="">
+            <img class="logo" src="assets/image/logo.png" width="150px" height="60px" alt="">
             <h4>Contacts</h4>
             <p><strong>Address: </strong>P. Nguyễn Trác, Yên Nghĩa, Hà Đông, Hà Nội</p>
             <p><strong>Phone: </strong> 0984663477</p>
@@ -507,5 +543,6 @@
 
 
     <script  src="assets/js/script.js"></script>
+    <script  src="assets/js/cart.js"></script>
 </body>
 </html>

@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "name": "Cartoon Nature T-Shirt",
+        "price": 139,
+        "image": "assets/image/f1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Flower T-Shirt",
+        "price": 120,
+        "image": "assets/image/f2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Flower T-Shirt 2",
+        "price": 120,
+        "image": "assets/image/f3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Sakura T-Shirt",
+        "price": 149,
+        "image": "assets/image/f4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Lotus T-Shirt",
+        "price": 139,
+        "image": "assets/image/f5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Brown&Blue Flannel",
+        "price": 199,
+        "image": "assets/image/f6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Wideleg Flower Pants",
+        "price":359,
+        "image": "assets/image/f7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Cat Blouse",
+        "price": 113,
+        "image": "assets/image/f8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Light Blue Shirt",
+        "price": 80,
+        "image": "assets/image/n1.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Grey Stripes Shirt",
+        "price": 80,
+        "image": "assets/image/n2.jpg"
+    },
+    {
+        "id": 11,
+        "name": "White Shirt",
+        "price": 80,
+        "image": "assets/image/n3.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Golden Leaf Short Sleeves",
+        "price": 159,
+        "image": "assets/image/n4.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Jean Shirt",
+        "price": 119,
+        "image": "assets/image/n5.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Horizontal Line Shorts",
+        "price": 165,
+        "image": "assets/image/n6.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Mustard",
+        "price": 90,
+        "image": "assets/image/n7.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Light Black Short Sleeves",
+        "price": 113,
+        "image": "assets/image/n8.jpg"
+    }
+
+]

@@ -89,7 +89,7 @@ body{
 #navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 
 #navbar li{
@@ -122,9 +122,47 @@ body{
     left: 20px;
 }
 
+.user-pic{
+    width: 5%;
+    border-radius: 50%;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+}
+
+
+.icon-cart{
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
 #mobile{
     display: none;
     align-items: center;
+}
+
+#mobile>ul>li{
+    list-style: none;
 }
 
 #close{
@@ -898,6 +936,8 @@ footer .copyright{
     color: #000;
 }
 
+
+
 /* cart page */
 #cart{
     overflow-x: auto;
@@ -996,6 +1036,86 @@ footer .copyright{
     font-size: 13px;
 }
 
+
+
+
+/* cart tab */
+.cartTab{
+    width: 400px;
+    margin-top: 100px;
+    background-color: #353432;
+    color: white;
+    position: fixed;
+    inset: 0 -400 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s ease;
+}
+
+.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+
+.cartTab h1{
+    color: white;
+    font-size: 32px;
+    margin: 20px;
+}
+
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button{
+    background-color: #e8bc0e;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .btn .close{
+    background-color: white;
+}
+
+.cartTab .listCart .item{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-top: 4px;
+    background-color: white;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: white;
+}
+
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+
+.listCart{
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+
+
 /* About Page */
 #about-head{
     display: flex;
@@ -1089,13 +1209,14 @@ footer .copyright{
     z-index: -9;
 }
 
+/* single blog post  */
 
 
 
 
 
 
-/* query */
+/* responsive */
 @media (max-width:799px){
     .section-p1{
         padding: 40px;
@@ -1114,7 +1235,7 @@ footer .copyright{
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
-        transition: 0.3s;
+        transition: 0.3s ease;
     }
 
     #navbar.active{
@@ -1146,6 +1267,86 @@ footer .copyright{
 
     #lg-bag{
         display: none;
+    }
+
+    /* cart */
+    .cartTab{
+        width: 400px;
+        margin: 0;
+        background-color: #353432;
+        color: white;
+        position: fixed;
+        inset: 0 -400 0 auto;
+        display: grid;
+        grid-template-rows: 70px 1fr 70px;
+        transition: 0.5s ease;
+        z-index: 9999;
+    }
+
+    .showCart {
+        display: block; /* or use visibility or opacity as needed */
+    }
+    
+    .showCart .cartTab{
+        inset: 0 0 0 auto;
+    }
+    
+    .cartTab h1{
+        color: white;
+        font-size: 32px;
+        margin: 20px;
+    }
+    
+    .cartTab .btn{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cartTab .btn button{
+        background-color: #e8bc0e;
+        border: none;
+        font-family: Poppins;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    .cartTab .btn .close{
+        background-color: white;
+    }
+    
+    .cartTab .listCart .item{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .listCart .quantity span{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        padding-top: 4px;
+        background-color: white;
+        color: #555;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .listCart .quantity span:nth-child(2){
+        background-color: transparent;
+        color: white;
+    }
+    
+    .listCart .item:nth-child(even){
+        background-color: #eee1;
+    }
+    
+    .listCart{
+        overflow: auto;
+    }
+    
+    .listCart::-webkit-scrollbar{
+        width: 0;
     }
 
     #hero{
@@ -1220,7 +1421,7 @@ footer .copyright{
  
     #hero{
         padding: 0 20px;
-        background-position: 55%;
+        background-position: 100%;
     }
 
     #feature{
