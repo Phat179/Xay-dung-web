@@ -39,53 +39,7 @@
             <i id="bar" class="fas fa-outdent"></i>
         </div>
 
-        <!-- dropdown   -->
-        <div class="profile-dropdown">
-            <div onclick="toggle()" class="profile-dropdown-btn">
-              <div class="profile-img" style="background-image: url('assets/image/people/1.jpg')">
-                <i class="fa-solid fa-circle"></i>
-              </div>
-    
-              <span
-                >Phat Ng
-                <i class="fa-solid fa-angle-down"></i>
-              </span>
-            </div>
-    
-            <ul class="profile-dropdown-list">
-              <li class="profile-dropdown-list-item">
-                <a href="#">
-                  <i class="fa-regular fa-user"></i>
-                  Edit Profile
-                </a>
-              </li>
-    
-              <li class="profile-dropdown-list-item">
-                <a href="#">
-                  <i class="fa-solid fa-sliders"></i>
-                  Settings
-                </a>
-              </li>
-    
-              <li class="profile-dropdown-list-item">
-                <a href="#">
-                  <i class="fa-regular fa-circle-question"></i>
-                  Help & Support
-                </a>
-              </li>
-              <hr />
-    
-              <li class="profile-dropdown-list-item">
-                <a href="#">
-                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                  Log out
-                </a>
-              </li>
-            </ul>
-          </div>
     </section>
-
-    
     
     <section style="background-image: url('assets/image/hero-1.png')" id="hero">
         <h4>Trade-in-offer</h4>
@@ -449,23 +403,23 @@
             <p>Please log in using your personal information to continue</p>
         </div>
         <div class="form-content">
-          <h2>LOGIN</h2>
-          <form action="#">
-            <div class="input-field">
-              <input type="text" required>
-              <label for="text">Email</label>
+            <h2>LOGIN</h2>
+            <form action="#">
+                <div class="input-field">
+                    <input type="text" id="emailInput" required>
+                    <label for="emailInput">Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="passwordInput" required>
+                    <label for="passwordInput">Password</label>
+                </div>
+                <a href="#" class="forgot-pass">Forgot password?</a>
+                <button type="submit" onclick="validateForm(event)">Log in</button>
+            </form>
+            <div class="bottom-link">
+                Don't have an account?
+                <a href="#" id="signup-link">Signup</a>
             </div>
-            <div class="input-field">
-              <input type="password" required>
-              <label for="">Password</label>
-            </div>
-            <a href="#" class="forgot-pass">Forgot password?</a>
-            <button type="submit" onclick="window.location.href='sproduct.html'">Log in</button>
-          </form>
-          <div class="bottom-link">
-            Don't have an ccount?
-            <a href="" id="signup-link">Signup</a>
-          </div>
         </div>
     </div>
     <div class="form-box signup">
@@ -502,6 +456,10 @@
 </div>
 
 
+
+
+
+<!-- carttab  -->
     <div class="cartTab">
         <h1>Your Cart</h1>
         <div class="listCart">
@@ -509,11 +467,10 @@
         </div>
         <div class="btn">
             <button class="close">Close</button>
-            <button class="checkout" onclick="window.location.href='cart.html'">Check Out</button>
+            <button class="checkout" onclick="window.location.href='checkout.html'">Check Out</button>
         </div>
     </div>
     
-
 
 
     <!-- footer -->
